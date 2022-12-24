@@ -1,7 +1,11 @@
 import { useCallback } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
+import { ThemeProvider } from 'styled-components/native';
+import theme from './src/global/styles/theme';
+import { StatusBar } from 'expo-status-bar';
+
+import { Container } from './src/styles';
 
 import {
   Poppins_400Regular,
@@ -30,6 +34,12 @@ export default function App() {
   }
 
   return (
-      <Dashboard/>
+      <ThemeProvider theme={theme}>
+        <StatusBar style="light"/>
+        <Container onLayout={onLayoutRootView}>
+              <Dashboard/>
+        </Container>
+      </ThemeProvider>
   );
 }
+
