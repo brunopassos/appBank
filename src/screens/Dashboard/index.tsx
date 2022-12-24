@@ -1,10 +1,11 @@
-import { Text } from "react-native";
 import { Container } from "./styles";
+
+import { DashboardHeader } from "../../components/DashboardHeader";
 
 export function Dashboard(){
     return (
         <Container>
-            <Text>Dashboard Screen</Text>
+            <DashboardHeader/>
         </Container>
     )
 }
