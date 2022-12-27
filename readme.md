@@ -4,6 +4,8 @@
 
 #
 
+# ⚠️ Status: Em andamento ⚠️
+
 ## Backend
 
     + Stack Base

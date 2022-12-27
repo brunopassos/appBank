@@ -1,10 +1,12 @@
 import { useTheme } from "styled-components";
+import { CardList } from "../CardList";
+
+import { FunctionItem } from "../FunctionComponent";
 
 import { 
     Container,
     FunctionItensArea
  } from "./styles";
-import { FunctionItem } from "../FunctionComponent";
 
 
 export function Content(){
@@ -22,6 +24,7 @@ export function Content(){
                 <FunctionItem buttonName="Cartões" name="credit-card" color={theme.colorsHomeScreen.iconFunctions}  onPress={handleFunctionButton}/>
                 <FunctionItem buttonName="Mais" name="more-horiz" color={theme.colorsHomeScreen.iconFunctions}  onPress={handleFunctionButton}/>
             </FunctionItensArea>
+            <CardList/>
         </Container>
     )
 }

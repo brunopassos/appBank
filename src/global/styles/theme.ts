@@ -14,7 +14,8 @@ export default {
         functions: "#DBE3F8",
         iconFunctions: "rgba(3, 25, 82, 0.86)",
 
-        myCards: "#292929",
+        myCards: "rgba(238, 238, 238, 0.8)",
+        cardList: "#292929",
         myCardsLine: "#585858",
         cardIconBackground: "#E9E9E9",
 
