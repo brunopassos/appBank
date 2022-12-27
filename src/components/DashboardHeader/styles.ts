@@ -12,7 +12,7 @@ export const Container = styled.View`
 export const UserDetails = styled.View`
     flex-direction: row;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 30px;
 `
 
 export const User = styled.View`
@@ -22,32 +22,31 @@ export const User = styled.View`
     margin-left: 27px;
 `
 export const UserGreetings = styled.Text` 
-    font-size: 18px;
+    font-size: 16px;
     font-family: ${({theme}) => theme.fonts.regular};
     color: ${({theme}) => theme.colorsHomeScreen.header1};
 `
 
 export const UserName = styled.Text` 
-    font-size: 22px;
+    font-size: 20px;
     font-family: ${({theme}) => theme.fonts.regular};
     color: ${({theme}) => theme.colorsHomeScreen.header2};
 `
 
 
 export const ProfileImage = styled.Image`
-    width: ${RFValue(60)}px;
-    height: ${RFValue(60)}px;
+    width: ${RFValue(50)}px;
+    height: ${RFValue(50)}px;
     border-radius: 50px;
     margin-right: 25px;
 `
 
 export const MoneyDetails = styled.View`
     align-items: center;
-    margin-top: 22px;
 `
 
 export const MoneyBalance = styled.Text` 
-    font-size: 26px;
+    font-size: 20px;
     font-family: ${({theme}) => theme.fonts.regular};
     color: ${({theme}) => theme.colorsHomeScreen.header2};
     `
