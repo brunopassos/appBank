@@ -2,6 +2,7 @@ import { useTheme } from "styled-components";
 import { CardList } from "../CardList";
 
 import { FunctionItem } from "../FunctionComponent";
+import { TransactionsList } from "../TransactionsList";
 
 import { 
     Container,
@@ -25,6 +26,7 @@ export function Content(){
                 <FunctionItem buttonName="Mais" name="more-horiz" color={theme.colorsHomeScreen.iconFunctions}  onPress={handleFunctionButton}/>
             </FunctionItensArea>
             <CardList/>
+            <TransactionsList/>
         </Container>
     )
 }

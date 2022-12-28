@@ -7,10 +7,11 @@ export const Container = styled.View`
     width: 100%;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+    align-items: center;
+    justify-content: center;
 `
 
 export const FunctionItensArea = styled.View`
-    margin-top: 15px;
     width: 100%;
     flex-direction: row;
     align-items: flex-start;
