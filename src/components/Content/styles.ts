@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const Container = styled.View`
     flex-direction: column;
-    flex: 4;
+    flex: 3.5;
     background-color: ${({theme}) => theme.colorsHomeScreen.backgroundSecondary};
     width: 100%;
     border-top-left-radius: 50px;

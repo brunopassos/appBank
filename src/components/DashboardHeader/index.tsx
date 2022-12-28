@@ -24,14 +24,14 @@ export function DashboardHeader(){
                 </User>
                 <ProfileImage source={{uri: "https://avatars.githubusercontent.com/u/26532465?v=4"}}/>
             </UserDetails>
-                <MoneyDetails>
-                    <MoneyBalance>
-                        R$ 8,640.00
-                    </MoneyBalance>
-                    <BalanceTitle>
-                        Saldo
-                    </BalanceTitle>
-                </MoneyDetails>
+            <MoneyDetails>
+                <MoneyBalance>
+                    R$ 8,640.00
+                </MoneyBalance>
+                <BalanceTitle>
+                    Saldo
+                </BalanceTitle>
+            </MoneyDetails>
         </Container>
     )
 }
