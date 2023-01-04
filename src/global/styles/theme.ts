@@ -24,6 +24,12 @@ export default {
 
 
     },
+    cardScreenColors: {
+        cardNumber: "#031952",
+        balanceTitle: "rgba(255, 255, 255, 0.8)",
+        balance: "#FFFFFF",
+        transactionOptionBackground: "rgba(65, 74, 97, 0.5)",
+    },
     colorsTransactionsScreen: {
         tabNotSelected: "rgba(65, 74, 97, 0.5)",
         income: "#439E41",
