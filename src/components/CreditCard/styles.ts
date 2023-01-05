@@ -1,6 +1,10 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
+    flex: 1;
+`
+
+export const Card = styled.View`
     width: 350px;
     height: 149px;
     background-color: ${({theme}) => theme.colorsHomeScreen.backgroundPrincipal};
