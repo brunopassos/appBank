@@ -19,8 +19,8 @@ export function TransactionsList(){
                 </ShowAll>
             </CardListHeader>
             <Container>
-                <Transaction first={true} categoryName="Games" iconName="videogame-asset" transactionValue="600,00" />
-                <Transaction first={false} categoryName="Supermercado" iconName="shopping-cart" transactionValue="400,00"/>
+                <Transaction first={true} categoryName="Games" iconName="game" transactionValue="600,00" />
+                <Transaction first={false} categoryName="Supermercado" iconName="shopping" transactionValue="400,00"/>
             </Container>
         </>
         
