@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-    width: 377px;
+    width: 350px;
     height: 149px;
     background-color: ${({theme}) => theme.colorsHomeScreen.backgroundPrincipal};
     border-radius: 20px;

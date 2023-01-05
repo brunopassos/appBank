@@ -13,7 +13,6 @@ import { ProfileScreen } from "../screens/ProfileScreen";
 
 const Tab = createBottomTabNavigator();
 
-
 export function TabRoutes(){
 
     const theme = useTheme();

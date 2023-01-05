@@ -9,28 +9,43 @@ import {
 } from "./styles"
 
 import VisaSvg from "../../assets/visa.svg";
-import { RFValue } from "react-native-responsive-fontsize";
+import MasterSvg from "../../assets/mastercard.svg";
 
-export function CreditCard(){
+interface Props {
+    number: string;
+    balance: string;
+    iconName: string;
+    expireDate: string;
+}
+
+export function CreditCard({number, balance, iconName, expireDate}:Props){
     return(
         <Container>
             <NumberAndBalance>
                 <CardNumber>
-                    **** **** **** 3245
+                    **** **** **** {number}
                 </CardNumber>
                 <BalanceTitle>
                     Saldo disponível
                 </BalanceTitle>
                 <Balance>
-                    R$ 2.200,00
+                    R$ {balance}
                 </Balance>
             </NumberAndBalance>
             <FlagAndDate>
+                {iconName === "visa" && 
                 <VisaSvg
                     width={70}
                     height={70}
                 />
-                <ExpireDate>01/24</ExpireDate>
+                }
+                {iconName === "mastercard" && 
+                <MasterSvg
+                    width={70}
+                    height={70}
+                />
+                }
+                <ExpireDate>{expireDate}</ExpireDate>
             </FlagAndDate>
         </Container>
     )

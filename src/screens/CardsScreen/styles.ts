@@ -14,3 +14,8 @@ export const Header = styled.Text`
     font-size: 24px;
     margin-bottom: 48px;
 `
+
+export const CarouselContainer = styled.View`
+    flex: 1;
+    background-color: ${({theme}) => theme.colorsHomeScreen.backgroundSecondary};
+`
