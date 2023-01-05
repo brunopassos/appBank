@@ -29,6 +29,8 @@ export default {
         balanceTitle: "rgba(255, 255, 255, 0.8)",
         balance: "#FFFFFF",
         transactionOptionBackground: "rgba(65, 74, 97, 0.5)",
+        cardIcon: "#6A6A6A",
+        cardButton: "rgba(209, 209, 209, 0.6)"
     },
     colorsTransactionsScreen: {
         tabNotSelected: "rgba(65, 74, 97, 0.5)",
