@@ -1,5 +1,9 @@
 import { RectButtonProps } from "react-native-gesture-handler";
-import { MaterialIcons } from '@expo/vector-icons';
+import { useTheme } from "styled-components";
+
+import TransferSvg from "../../assets/transfer.svg"
+import BillsSvg from "../../assets/bills.svg"
+import MoreSvg from "../../assets/more.svg"
 
 
 import { 
@@ -16,10 +20,14 @@ interface Props extends RectButtonProps{
 }
 
 export function FunctionItem({onPress, name, color, buttonName}:Props){
+    const theme = useTheme();
+
     return (
         <Container>
             <Button onPress={onPress}>
-                <MaterialIcons name={name} size={40} color={color} />
+                {name === "transfer" && <TransferSvg width={30} height={30} color={theme.cardScreenColors.cardNumber}/>}
+                {name === "card" && <BillsSvg width={30} height={30} color={theme.cardScreenColors.cardNumber}/>}
+                {name === "more" && <MoreSvg width={30} height={30} color={theme.cardScreenColors.cardNumber}/>}
             </Button>
             <ButtonTextName>
                 {buttonName}
