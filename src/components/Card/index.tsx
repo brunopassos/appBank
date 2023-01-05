@@ -2,6 +2,10 @@ import React from 'react';
 
 import { Fontisto } from '@expo/vector-icons';
 
+import VisaSvg from "../../assets/visa.svg";
+import MasterSvg from "../../assets/mastercard.svg";
+
+
 interface ICardProps{
     first: boolean;
     iconName: any;
@@ -29,7 +33,8 @@ export function Card({first, iconName, brand, number, limit, expiration}:ICardPr
         <Container first={first}>
             <ImageView>
                 <Image>
-                    <Fontisto name={iconName} size={20} color="black" />
+                    {iconName == "visa" && <VisaSvg width={30} height={30}/>}
+                    {iconName == "mastercard" && <MasterSvg width={30} height={30}/>}
                 </Image>
             </ImageView>
             <CardInfos>

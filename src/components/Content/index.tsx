@@ -21,9 +21,9 @@ export function Content(){
     return(
         <Container>
             <FunctionItensArea>
-                <FunctionItem buttonName="Transferir" name="compare-arrows" color={theme.colorsHomeScreen.iconFunctions}  onPress={handleFunctionButton}/>
-                <FunctionItem buttonName="Cartões" name="credit-card" color={theme.colorsHomeScreen.iconFunctions}  onPress={handleFunctionButton}/>
-                <FunctionItem buttonName="Mais" name="more-horiz" color={theme.colorsHomeScreen.iconFunctions}  onPress={handleFunctionButton}/>
+                <FunctionItem buttonName="Transferir" name="transfer" color={theme.colorsHomeScreen.iconFunctions}  onPress={handleFunctionButton}/>
+                <FunctionItem buttonName="Contas" name="card" color={theme.colorsHomeScreen.iconFunctions}  onPress={handleFunctionButton}/>
+                <FunctionItem buttonName="Mais" name="more" color={theme.colorsHomeScreen.iconFunctions}  onPress={handleFunctionButton}/>
             </FunctionItensArea>
             <CardList/>
             <TransactionsList/>
