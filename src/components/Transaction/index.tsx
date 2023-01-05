@@ -1,6 +1,9 @@
 import React from 'react';
 import { MaterialIcons } from '@expo/vector-icons';
 
+import GameSvg from "../../assets/game.svg";
+import ShoppingSvg from "../../assets/shopping.svg";
+
 interface ITransactionProps{
     first: boolean;
     iconName: any;
@@ -23,7 +26,8 @@ export function Transaction({categoryName, first, iconName, transactionValue}:IT
             <ImageAndNameView>
                 <IconView>
                     <Image>
-                        <MaterialIcons name={iconName} size={24} color="black" />
+                        {iconName === "game" && <GameSvg width={30} height={30}/>}
+                        {iconName === "shopping" && <ShoppingSvg width={30} height={30}/>}
                     </Image>
                 </IconView>
                 <CategoryName>
