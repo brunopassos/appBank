@@ -18,17 +18,17 @@ const ITEM_WIDTH = SLIDER_WIDTH * 0.88;
 const cardData = [
     {
         id: "1",
-        number: "8753",
-        balance: "2.000,00",
+        number: "1234",
+        balance: "2.200,00",
         iconName: "visa",
         expireDate: '01/24'
     },
     {
         id: "2",
-        number: "7452",
-        balance: "1.300,00",
+        number: "8765",
+        balance: "400,00",
         iconName: "mastercard",
-        expireDate: '04/29'
+        expireDate: '10/28'
     },
     {
         id: "3",

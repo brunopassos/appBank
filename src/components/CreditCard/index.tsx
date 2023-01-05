@@ -15,6 +15,7 @@ import VisaSvg from "../../assets/visa.svg";
 import MasterSvg from "../../assets/mastercard.svg";
 import { CardOptions } from "../CardOptions";
 import { OptionsDetails } from "../OptionsDetails";
+import { Button } from "../Button";
 
 interface Props {
     number: string;
@@ -56,6 +57,7 @@ export function CreditCard({number, balance, iconName, expireDate}:Props){
             </Card>
             <CardOptions selected/>
             <OptionsDetails />
+            <Button/>
         </Container>
     )
 }
