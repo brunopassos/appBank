@@ -1,6 +1,8 @@
 import React from 'react';
 import { Transaction } from '../Transaction';
 
+import { Link } from '@react-navigation/native';
+
 import {
  Container,
  CardListHeader,
@@ -15,7 +17,9 @@ export function TransactionsList(){
             <CardListHeader>
                 <Title>Transações recentes</Title>
                 <ShowAll>
-                    <Text>Ver todas</Text>
+                    <Text>
+                        <Link to={{screen: "Transações"}}>Ver todas</Link>
+                    </Text>
                 </ShowAll>
             </CardListHeader>
             <Container>

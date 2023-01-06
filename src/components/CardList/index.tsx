@@ -1,6 +1,8 @@
 import React from 'react';
 import { Card } from '../Card';
 
+import { Link }  from "@react-navigation/native"
+
 import {
  Container,
  CardListHeader,
@@ -16,7 +18,9 @@ export function CardList(){
             <CardListHeader>
                 <Title>Meus Cartões</Title>
                 <ShowAll>
-                    <Text>Ver todos</Text>
+                    <Text>
+                        <Link to={{ screen: 'Cartões'}}>Ver todos</Link>
+                    </Text>
                 </ShowAll>
             </CardListHeader>
             <Cards>

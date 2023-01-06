@@ -53,7 +53,7 @@ export function TabRoutes(){
             />
 
             <Tab.Screen 
-            name="Transferências" 
+            name="Transações" 
             component={TransactionScreen}
             options={{
                 tabBarIcon: ({size, color}) => (
