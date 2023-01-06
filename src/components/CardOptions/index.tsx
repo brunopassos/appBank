@@ -1,3 +1,5 @@
+import { Link } from '@react-navigation/native';
+
 import {
     Container,
     Option,
@@ -15,7 +17,9 @@ function CardOptions({ selected }:OptionProps){
                 <OptionName selected={true}>Configurações</OptionName>
             </Option>
             <Option selected={false}>
-                <OptionName selected={false}>Transações</OptionName>
+                <OptionName selected={false}>
+                    <Link to={{screen: "Transações"}}>Transações</Link>
+                </OptionName>
             </Option>
         </Container>
     )
