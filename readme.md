@@ -1,6 +1,6 @@
 # Bank App
 
-## Estruturar uma aplicação mobile fullstack, dockerizada, cujo objetivo seja possibilitar que usuários consigam realizar transferências internas entre si.
+## Estruturar uma aplicação mobile fullstack, dockerizada, cujo objetivo seja possibilitar que usuários consigam realizar transferências internas entre si. [Figma](https://www.figma.com/file/wbbwOlM8GOsqTzPIf8hCKz/Online-Banking-Mobile-App-Design-(Community)?node-id=2%3A2&t=2zCz6Y9pDEmrIijS-0)
 
 #
 
