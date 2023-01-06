@@ -2,13 +2,16 @@ import React from 'react';
 import { Text } from 'react-native-svg';
 
 import {
- Container
+ Container,
+ Header
 } from './styles';
 
 export function TransactionScreen(){
     return(
         <Container>
-            <Text>TransactionScreen</Text>
+            <Header>
+                Transações
+            </Header>
         </Container>
     );
 }
