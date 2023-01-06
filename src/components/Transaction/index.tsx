@@ -3,6 +3,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 import GameSvg from "../../assets/game.svg";
 import ShoppingSvg from "../../assets/shopping.svg";
+import BillsSvg from "../../assets/bills.svg";
 
 interface ITransactionProps{
     first: boolean;
@@ -28,6 +29,7 @@ export function Transaction({categoryName, first, iconName, transactionValue}:IT
                     <Image>
                         {iconName === "game" && <GameSvg width={30} height={30}/>}
                         {iconName === "shopping" && <ShoppingSvg width={30} height={30}/>}
+                        {iconName === "bills" && <BillsSvg width={30} height={30}/>}
                     </Image>
                 </IconView>
                 <CategoryName>

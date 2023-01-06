@@ -1,4 +1,3 @@
-import { TouchableOpacity } from 'react-native';
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
@@ -18,6 +17,7 @@ export const Header = styled.Text`
 
 export const TransactionsScreenOptions = styled.View`
     width: 100%;
+    margin-bottom: 32px;
 `
 
 
@@ -37,11 +37,6 @@ export const Title = styled.Text`
     margin-left: 25px;
 `
 
-export const FilterButton = styled(TouchableOpacity)`
-
-`
-
-
 export const Filter = styled.Text`
     font-style: normal;
     font-weight: 500;
@@ -59,7 +54,6 @@ export const FilterOptions = styled.View`
     margin-top: 22px;
 `
 
-
 export const FilterAll = styled.View`
     margin-left: 27px;
     width: 72px;
@@ -68,8 +62,7 @@ export const FilterAll = styled.View`
     justify-content: center;
     background: ${({theme}) => theme.colorsHomeScreen.backgroundPrincipal};
     border-radius: 20px;
-    `
-
+`
 
 export const FilterAllText = styled.Text`
     font-weight: 500;
@@ -77,8 +70,7 @@ export const FilterAllText = styled.Text`
     line-height: 24px;
     color: ${({theme}) => theme.cardScreenColors.balance};
     
-    `
-
+`
 
 export const FilterIncome = styled.View`
     margin-left: 11px;
@@ -114,4 +106,20 @@ export const FilterExpenseText = styled.Text`
     font-size: 16px;
     line-height: 24px;
     color: ${({theme}) => theme.cardScreenColors.balanceTitle};
+`
+
+
+export const TransactionsList = styled.View`
+    background: ${({theme}) => theme.colorsHomeScreen.cardList};
+    border-radius: 20px;
+    margin-bottom: 32px;
+`
+
+export const TodayTitle = styled.Text`
+    color: ${({theme}) => theme.colorsTransactionsScreen.titleText};
+    padding-bottom: 29px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 29px;
 `
