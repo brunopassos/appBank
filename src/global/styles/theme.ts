@@ -35,7 +35,8 @@ export default {
     colorsTransactionsScreen: {
         tabNotSelected: "rgba(65, 74, 97, 0.5)",
         income: "#439E41",
-        outcome: "#C5626E"
+        outcome: "#C5626E",
+        titleText: "rgba(238, 238, 238, 0.8)",
     },
     colorsTransferScreen: {
         accountDataBackground: "#7485B4",

@@ -1,4 +1,7 @@
 import React from 'react';
+import { ScrollView, TouchableOpacity } from 'react-native';
+
+import { Transaction } from '../../components/Transaction';
 
 import IncomeSvg from "../../assets/income.svg";
 import ExpenseSvg from "../../assets/expense.svg";
@@ -10,15 +13,17 @@ import {
  TitleAndFilter,
  FilterOptions,
  Title,
- FilterButton,
  Filter,
  FilterAll,
  FilterAllText,
  FilterIncome,
  FilterIncomeText,
  FilterExpense,
- FilterExpenseText
+ FilterExpenseText,
+ TransactionsList,
+ TodayTitle
 } from './styles';
+
 
 export function TransactionScreen(){
     return(
@@ -31,11 +36,11 @@ export function TransactionScreen(){
                     <Title>
                         Recentes
                     </Title>
-                    <FilterButton>
+                    <TouchableOpacity>
                         <Filter>
                             Selecione o perído
                         </Filter>
-                    </FilterButton>
+                    </TouchableOpacity>
                 </TitleAndFilter>
                 <FilterOptions>
                     <FilterAll>
@@ -57,6 +62,34 @@ export function TransactionScreen(){
                     </FilterExpense>
                 </FilterOptions>
             </TransactionsScreenOptions>
+            <ScrollView>
+                <TodayTitle>
+                    Hoje
+                </TodayTitle>
+                <TransactionsList>
+                    <Transaction categoryName="Games" first={true} iconName="game" transactionValue="600"/>
+                    <Transaction categoryName="Supermercado" first={true} iconName="shopping" transactionValue="400"/>
+                    <Transaction categoryName="Conta de luz" first={false} iconName="bills" transactionValue="250"/>
+                </TransactionsList>
+                <TodayTitle>
+                    Ontem
+                </TodayTitle>
+                <TransactionsList>
+                    <Transaction categoryName="Games" first={true} iconName="game" transactionValue="600"/>
+                    <Transaction categoryName="Supermercado" first={true} iconName="shopping" transactionValue="400"/>
+                    <Transaction categoryName="Conta de luz" first={false} iconName="bills" transactionValue="250"/>
+                </TransactionsList>
+                <TodayTitle>
+                    Ultimos 7 dias
+                </TodayTitle>
+                <TransactionsList>
+                    <Transaction categoryName="Games" first={true} iconName="game" transactionValue="600"/>
+                    <Transaction categoryName="Conta de luz" first={true} iconName="bills" transactionValue="250"/>
+                    <Transaction categoryName="Games" first={true} iconName="game" transactionValue="600"/>
+                    <Transaction categoryName="Supermercado" first={true} iconName="shopping" transactionValue="400"/>
+                    <Transaction categoryName="Conta de luz" first={false} iconName="bills" transactionValue="250"/>
+                </TransactionsList>
+            </ScrollView>
         </Container>
     );
 }
